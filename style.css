@@ -1,3 +1,11 @@
+:root {
+    --clock-size: 50vw;
+    --clock-inner-size: 88%;
+    --clock-center-size: 48%;
+    --indicator-width: 0.8%;
+    --indicator-height: 2%;
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -196,3 +204,15 @@ body {
     border-right: 2px solid transparent;
     border-top: 30px solid #303030;
 }
+
+@media (max-width: 768px) {
+    :root {
+      --clock-size: 80vw;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    :root {
+      --clock-size: 90vw;
+    }
+  }
